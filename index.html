@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Atividade Prática II</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 class="titulo">Atividade Prática - Unidade II</h1>
+	<h1 class="titulo">Aula 9</h1>
+	<h1 class="titulo">Aula 10</h1>
+	<div id="linguagens">
+		Linguagens que sei programar
+	</div>
+	<div id="javascript">
+		Javascript
+	</div>
+	<div id="java">
+		Java
+	</div>
+
+	<h1 class="titulo">Aula 11</h1>
+	<h2 class="titulo">Eu quero ser...</h2>
+	<div class="titulo" id="profissao"></div>
+	<button id="button" class="button-3" role="button">Descubra</button>
+
+	<h1 class="titulo">Aula 12</h1>
+	<div ng-app="minhaApp" ng-controller="meuControl">
+		<div class="campos">
+			Cidade: <input class="entrada" type="text" ng-model="cidade"><br>
+			Estado: <input class="entrada" type="text" ng-model="estado"><br>
+		</div>
+		<div class="campos">
+			Cidade: {{ cidade }}<br>
+			Estado: {{ estado | uppercase }}<br>
+		</div>
+		<div class="campos">
+			Disciplinas:<br>
+			<p>Busca por: <input type="text" ng-model="busca"> </p>
+			<li ng-repeat="disciplina in disciplinas | filter:busca | orderBy:'disciplina' ">
+				{{ disciplina.disciplina + ', ' + disciplina.professor }}
+			</li>
+		</div>
+
+	</div>
+
+	<h1 class="titulo">Aula 13</h1>
+
+	<div ng-app="meuApp" ng-controller="meuControl">
+		<h1>{{ hora }}</h1>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
